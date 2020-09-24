@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- logo of the company -->
+    <div id="logo_box">
+        <img src="Chrysanthemum.jpg" alt="loading">
+    </div>
+    <!-- sign up box -->
+    <div id="signup_box">
+        <div id="signup_head">SIGN UP</div>
+        <div id="signup_body">
+            <p id="p1">Create your account</p>
+            <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="signup_form">
+            <!-- sign up using google and facebook -->
+            <div id="signup_type">
+                <button
+                    onclick="window.location.href='https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin';" 
+                    id="use_google" class="signup_form_button">
+                    <div class="signup_logo"><img src="img_google.jpg" alt="loading"></div>
+                    <div class="signup_with">Sign up with Google</div>
+                </button>
+                <button onclick="window.location.href='https://www.facebook.com/login/';" id="use_facebook"
+                    class="signup_form_button">
+                    <div class="signup_logo"><img src="img_facebook.jpg" alt="loading"></div>
+                    <div class="signup_with">Sign up with Facebook</div>
+                </button>
+            </div>
+
+            <h7>or</h7>
+            <!-- sign up using emial  -->
+            <div id="form_requirement">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <i class="far fa-eye" id="togglePassword"></i>
+
+            </div>
+            <!-- terms of use and privacy policy -->
+            <p id="t_c">By clicking Sign Up, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy
+                    Policy</a>.</p>
+            <!-- submit button -->
+            <div id="submit_button">
+                <button onclick="window.location.href='https://reqres.in';" id="signup_submit">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
